@@ -1,0 +1,85 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.form-button {
+  height: 68px;
+  width: 242px;
+  background-color: #fed136;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  position: relative;
+}
+.form-button:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+.form-button:after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+}
+.checkbox-fake {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: relative;
+}
+.checkbox-fake:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.checkbox-radio:checked + .checkbox-fake:before {
+  background-color: blue;
+}
+.checkbox-radio {
+  display: none;
+}
+.checkbox-fake-2 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  position: relative;
+}
+.checkbox-tick:checked + .checkbox-fake-2 {
+  background: url(./checked.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.checkbox-tick {
+  display: none;
+}
+.form-checkbox {
+  display: inline-block;
+  margin-left: 50px;
+}
